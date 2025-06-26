@@ -282,6 +282,9 @@ npx @modelcontextprotocol/inspector
 # Connect to: http://localhost:3000/mcp
 ```
 
+![MCP Inspector Screenshot](./assets/mcp-inspector-screenshot.png)
+*MCP Inspector interface showing tools, resources, and prompts with interactive testing capabilities*
+
 The MCP Inspector provides a user-friendly web interface to:
 - ✅ **Interactive Testing**: Click-based tool execution and resource access
 - ✅ **Real-time Results**: See responses formatted and highlighted
