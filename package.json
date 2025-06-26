@@ -1,0 +1,58 @@
+{
+  "name": "mcp-server-example",
+  "version": "1.0.0",
+  "description": "A scalable MCP (Model Context Protocol) server with modular tools, prompts, and resources",
+  "keywords": [
+    "mcp",
+    "model-context-protocol", 
+    "server",
+    "tools",
+    "resources",
+    "ai",
+    "javascript",
+    "nodejs",
+    "express"
+  ],
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "mcp-server-example": "./src/index.js"
+  },
+  "files": [
+    "src/",
+    "examples/",
+    "README.md",
+    "package.json"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test tests/*.test.js",
+    "test:watch": "node --test --watch tests/*.test.js",
+    "test:integration": "node tests/http-integration-test.js",
+    "test:manual": "./examples/curl/all.sh",
+    "stop": "pkill -f 'node src/index.js' || echo 'No MCP server running'"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.3",
+    "express": "^5.1.0",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vagnervjs/mcp-server-example.git"
+  },
+  "homepage": "https://github.com/vagnervjs/mcp-server-example#readme",
+  "bugs": {
+    "url": "https://github.com/vagnervjs/mcp-server-example/issues"
+  },
+  "author": {
+    "name": "Vagner Santana",
+    "email": "vagnervjs@gmail.com"
+  },
+  "license": "MIT"
+}
